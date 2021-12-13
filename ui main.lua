@@ -179,7 +179,7 @@ NameReal.Position = UDim2.new(0.5, 0, 0.9895, 0)
 NameReal.AnchorPoint = Vector2.new(0.5, 0.5)
 NameReal.Size = UDim2.new(0, 5000, 0, 3400)
 NameReal.Font = Enum.Font.GothamBold
-NameReal.Text = "HERMES HUB V1.0.1"
+NameReal.Text = "StarxHub"
 NameReal.TextColor3 = _G.Color
 NameReal.TextSize = 10.000
 
@@ -3635,6 +3635,7 @@ end
 return top
 end
 
+
 _G.Color = Color3.fromRGB(255, 13, 90)
 local Window = create:Win("Star x Hub")
 local Tap1 = Window:Taps("Tab1")
@@ -3679,4 +3680,3 @@ end)
 page2:Slider("Point",false,false,1,100,1,1,1,function(t)
     print(t)
 end)
-
