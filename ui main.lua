@@ -3634,3 +3634,49 @@ return  page
 end
 return top
 end
+
+_G.Color = Color3.fromRGB(255, 13, 90)
+local Window = create:Win("Star x Hub")
+local Tap1 = Window:Taps("Tab1")
+local Tap2 = Window:Taps("Tab2")
+
+
+local page1 = Tap1:newpage()
+local page2 = Tap1:newpage()
+
+page1:Label("This is just a label.")
+page1:Toggle("Toggle",false,function(t)
+print(t)
+end)
+page1:Button("Button",function(t)
+print("t")
+end)
+page1:Dropdown("Dropdown",false,{"1","2","3"},function(t)
+    print(t)
+end)
+page1:TextBox("TextBox","Text",function(t)
+    print(t)
+end)
+page1:Slider("Point",false,false,1,100,1,1,1,function(t)
+    print(t)
+end)
+
+page2:Label("This is just a label.")
+page2:Toggle("Toggle",false,function(t)
+print(t)
+end)
+
+
+page2:Button("Button",function(t)
+print(t)
+end)
+page2:Dropdown("Dropdown",false,{"1","2","3"},function(t)
+    print(t)
+end)
+page2:TextBox("TextBox","Text",function(t)
+    print(t)
+end)
+page2:Slider("Point",false,false,1,100,1,1,1,function(t)
+    print(t)
+end)
+
